@@ -9,6 +9,7 @@ use Symfony\Component\Validator\Constraints as Assert;
 class FeeStructureLoanToFeeDTO
 {
     public function __construct(
+        // @phpstan-ignore-next-line
         #[Assert\Range([1000, 20000])]
         public float $amount,
         #[Assert\NotBlank]

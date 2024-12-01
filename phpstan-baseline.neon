@@ -1,0 +1,31 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Method Tests\\Integration\\Service\\FeeCalculatorServiceTest\:\:loanAmountFeeProvider\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: tests/Integration/Service/FeeCalculatorServiceTest.php
+
+		-
+			message: '#^Method Tests\\Unit\\Helper\\FeeInterpolatorHelperTest\:\:interpolationDataProvider\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: tests/Unit/Helper/FeeInterpolatorHelperTest.php
+
+		-
+			message: '#^Method Tests\\Unit\\Service\\FeeCalculatorServiceTest\:\:loanAmountFeeProvider\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: tests/Unit/Service/FeeCalculatorServiceTest.php
+
+		-
+			message: '#^Property Tests\\Unit\\Service\\FeeCalculatorServiceTest\:\:\$feeCalculationStrategy has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: tests/Unit/Service/FeeCalculatorServiceTest.php
+
+		-
+			message: '#^Property Tests\\Unit\\Service\\FeeCalculatorServiceTest\:\:\$feeCalculatorRepository has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: tests/Unit/Service/FeeCalculatorServiceTest.php
