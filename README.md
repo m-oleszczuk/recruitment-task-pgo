@@ -99,3 +99,24 @@ The fee structure doesn't follow particular algorithm and it is possible that sa
 19000 PLN: 760 PLN
 20000 PLN: 800 PLN
 ```
+
+
+## Setting up the environment:
+#### The following command will set up the docker container and run composer install:
+```bash
+make setup 
+```
+
+#### Running tests
+```bash
+make run-tests 
+```
+
+#### Other misc commands:
+In order: starts the container, stops the container, stops and removes the container and connects to the container.
+```bash
+make start
+make stop
+make destroy
+make bash 
+```

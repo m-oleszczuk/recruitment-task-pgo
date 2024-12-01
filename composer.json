@@ -11,5 +11,15 @@
         "psr-4": {
             "PragmaGoTech\\Interview\\": "src/"
         }
+    },
+    "require": {
+        "symfony/validator": "^7.2",
+        "symfony/dependency-injection": "^7.2",
+        "symfony/config": "^7.2",
+        "symfony/yaml": "^7.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.6",
+        "phpstan/phpstan": "^2.0"
     }
 }

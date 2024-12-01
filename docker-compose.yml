@@ -1,0 +1,9 @@
+version: "3"
+services:
+    php:
+        build:
+            context: ./
+        volumes:
+            - .:/app:cached
+        working_dir: /app
+        container_name: loan_calculator_php

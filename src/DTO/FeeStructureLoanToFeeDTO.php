@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace PragmaGoTech\Interview\Model;
+namespace PragmaGoTech\Interview\DTO;
 
 use Symfony\Component\Validator\Constraints as Assert;
 
-final readonly class LoanProposal
+class FeeStructureLoanToFeeDTO
 {
     public function __construct(
-        #[Assert\Choice([12, 24])]
-        public int $term,
         #[Assert\Range([1000, 20000])]
         public float $amount,
+        #[Assert\NotBlank]
+        public float $fee,
     )
     {
     }
